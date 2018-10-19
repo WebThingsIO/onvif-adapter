@@ -1,0 +1,84 @@
+{
+  "name": "onvif-adapter",
+  "display_name": "ONVIF",
+  "version": "0.0.1",
+  "description": "ONVIF Profile S camera adapter.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla-iot/onvif-adapter.git"
+  },
+  "keywords": [
+    "mozilla",
+    "iot",
+    "adapter",
+    "onvif",
+    "camera"
+  ],
+  "author": "Mozilla IoT",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mozilla-iot/onvif-adapter/issues"
+  },
+  "homepage": "https://github.com/mozilla-iot/onvif-adapter#readme",
+  "dependencies": {
+    "node-onvif": "^0.1.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0"
+  },
+  "files": [
+    "LICENSE",
+    "SHA256SUMS",
+    "index.js",
+    "lib/onvif-adapter.js",
+    "lib/onvif-device.js",
+    "lib/onvif-property.js",
+    "node_modules"
+  ],
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "plugin": true,
+    "exec": "{nodeLoader} {path}",
+    "config": {
+      "devices": []
+    },
+    "schema": {
+      "type": "object",
+      "required": [
+        "devices"
+      ],
+      "properties": {
+        "devices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "xaddr",
+              "username",
+              "password"
+            ],
+            "properties": {
+              "xaddr": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
