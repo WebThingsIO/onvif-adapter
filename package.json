@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/mozilla-iot/onvif-adapter#readme",
   "dependencies": {
-    "node-onvif": "^0.1.7"
+    "onvif-nvt": "^0.2.8"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
