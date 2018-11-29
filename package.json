@@ -4,6 +4,9 @@
   "version": "0.0.1",
   "description": "ONVIF Profile S camera adapter.",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mozilla-iot/onvif-adapter.git"
