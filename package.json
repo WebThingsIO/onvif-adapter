@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/mozilla-iot/onvif-adapter#readme",
   "dependencies": {
+    "mkdirp": "^0.5.1",
     "onvif-nvt": "^0.2.8"
   },
   "devDependencies": {
