@@ -62,18 +62,21 @@
           "items": {
             "type": "object",
             "required": [
-              "xaddr",
+              "address",
               "username",
               "password"
             ],
             "properties": {
-              "xaddr": {
+              "address": {
                 "type": "string"
               },
               "username": {
                 "type": "string"
               },
               "password": {
+                "type": "string"
+              },
+              "urn": {
                 "type": "string"
               },
               "note": {
