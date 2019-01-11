@@ -16,6 +16,8 @@ All other ONVIF Profile S compatible cameras.
 
 This add-on can be installed through the UI, via _Settings -> Add-ons -> +_.
 
+**NOTE:** If you are installing this add-on in a gateway you built yourself, your system will need to have [ffmpeg](https://www.ffmpeg.org/) installed.
+
 # Configuration
 
 When new devices are detected, they are added to the add-on's config with a blank username/password entry. Therefore, to configure each device, do the following:
