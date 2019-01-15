@@ -1,7 +1,7 @@
 {
   "name": "onvif-adapter",
   "display_name": "ONVIF",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ONVIF Profile S camera adapter.",
   "main": "index.js",
   "scripts": {
@@ -49,14 +49,20 @@
     "plugin": true,
     "exec": "{nodeLoader} {path}",
     "config": {
+      "enablePTZ": false,
       "devices": []
     },
     "schema": {
       "type": "object",
       "required": [
+        "enablePTZ",
         "devices"
       ],
       "properties": {
+        "enablePTZ": {
+          "type": "boolean",
+          "description": "Enable experimental PTZ controls"
+        },
         "devices": {
           "type": "array",
           "items": {

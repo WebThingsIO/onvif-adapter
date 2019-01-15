@@ -30,6 +30,8 @@ When new devices are detected, they are added to the add-on's config with a blan
 6. After a few seconds, go back to the _Things_ screen and start a new search again.
 7. If everything went well, your devices should now be available.
 
+Additionally, PTZ controls can be optionally enabled.
+
 ## Manual Configuration
 
 If your devices were not auto-populated in the configuration screen, but you know the address of the cameras, you can configure them as follows:
