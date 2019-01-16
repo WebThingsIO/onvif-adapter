@@ -1,6 +1,8 @@
 # onvif-adapter
 
-ONVIF Profile S camera adapter for Mozilla IoT Gateway
+ONVIF Profile S camera adapter for Mozilla IoT Gateway.
+
+**NOTE:** Things will be much more painless if your cameras are all given static IP addresses on your network.
 
 # Supported Devices
 
