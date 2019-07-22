@@ -9,6 +9,8 @@ ONVIF Profile S camera adapter for Mozilla WebThings Gateway.
 ## Tested and Working
 
 * [Foscam R2](https://www.foscam.com/R2.html)
+* SV3C SV-B06W-1080P-HX
+* [Amcrest IP3M-941B](https://amcrest.ca/amcrest-ultrahd-2k-3mp-2304tvl-wifi-video-monitoring-security-ip-camera-with-pan-tilt-dual-band-5ghz-2-4ghz-two-way-audio-3-megapixel-2304x1296-at-20fps-wide-90-viewing-angle-and-night-vision-ip3m-941b-black.html)
 
 ## Untested but _Should Work_
 
