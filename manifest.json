@@ -1,58 +1,23 @@
 {
-  "name": "onvif-adapter",
-  "display_name": "ONVIF",
-  "version": "0.2.0",
-  "description": "ONVIF Profile S camera adapter.",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mozilla-iot/onvif-adapter.git"
-  },
-  "keywords": [
-    "mozilla",
-    "iot",
-    "adapter",
-    "onvif",
-    "camera"
-  ],
   "author": "Mozilla IoT",
+  "description": "ONVIF Profile S camera adapter.",
+  "gateway_specific_settings": {
+    "webthings": {
+      "exec": "{nodeLoader} {path}",
+      "primary_type": "adapter",
+      "strict_max_version": "*",
+      "strict_min_version": "0.10.0"
+    }
+  },
+  "homepage_url": "https://github.com/mozilla-iot/onvif-adapter#readme",
+  "id": "onvif-adapter",
   "license": "MPL-2.0",
-  "bugs": {
-    "url": "https://github.com/mozilla-iot/onvif-adapter/issues"
-  },
-  "homepage": "https://github.com/mozilla-iot/onvif-adapter#readme",
-  "dependencies": {
-    "mkdirp": "^0.5.1",
-    "onvif-nvt": "^0.2.20"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.4.0"
-  },
-  "files": [
-    "LICENSE",
-    "README.md",
-    "SHA256SUMS",
-    "index.js",
-    "lib/onvif-adapter.js",
-    "lib/onvif-device.js",
-    "lib/onvif-property.js",
-    "manifest.json",
-    "node_modules"
-  ],
-  "moziot": {
-    "api": {
-      "min": 2,
-      "max": 2
-    },
-    "plugin": true,
-    "exec": "{nodeLoader} {path}",
-    "config": {
-      "enablePTZ": false,
-      "devices": []
+  "manifest_version": 1,
+  "name": "ONVIF",
+  "options": {
+    "default": {
+      "devices": [],
+      "enablePTZ": false
     },
     "schema": {
       "type": "object",
@@ -103,5 +68,7 @@
         }
       }
     }
-  }
+  },
+  "short_name": "ONVIF",
+  "version": "0.2.0"
 }
