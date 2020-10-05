@@ -1,6 +1,6 @@
 {
   "name": "onvif-adapter",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "ONVIF Profile S camera adapter.",
   "main": "index.js",
   "scripts": {
@@ -8,21 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mozilla-iot/onvif-adapter.git"
+    "url": "git+https://github.com/WebThingsIO/onvif-adapter.git"
   },
-  "author": "Mozilla IoT",
+  "author": "WebThingsIO",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/mozilla-iot/onvif-adapter/issues"
+    "url": "https://github.com/WebThingsIO/onvif-adapter/issues"
   },
-  "homepage": "https://github.com/mozilla-iot/onvif-adapter#readme",
+  "homepage": "https://github.com/WebThingsIO/onvif-adapter#readme",
   "dependencies": {
     "mkdirp": "^1.0.4",
     "onvif-nvt": "^0.2.25"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.5.0"
+    "eslint": "^7.10.0"
   },
   "files": [
     "LICENSE",
